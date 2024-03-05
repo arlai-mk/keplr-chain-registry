@@ -1,0 +1,56 @@
+{
+  "chainId": "neutron-devnet-1",
+  "chainName": "Neutron Devnet",
+  "chainSymbolImageUrl": "https://raw.githubusercontent.com/chainapsis/keplr-chain-registry/main/images/neutron-devnet/chain.png",
+  "bip44": {
+    "coinType": 118
+  },
+  "bech32Config": {
+    "bech32PrefixAccAddr": "neutron",
+    "bech32PrefixAccPub": "neutronpub",
+    "bech32PrefixValAddr": "neutronvaloper",
+    "bech32PrefixValPub": "neutronvaloperpub",
+    "bech32PrefixConsAddr": "neutronvalcons",
+    "bech32PrefixConsPub": "neutronvalconspub"
+  },
+  "currencies": [
+    {
+      "coinDenom": "NTRN",
+      "coinMinimalDenom": "untrn",
+      "coinDecimals": 6,
+      "coinGeckoId": "neutron-3",
+      "coinImageUrl": "https://raw.githubusercontent.com/chainapsis/keplr-chain-registry/main/images/neutron-devnet/untrn.png"
+    }
+  ],
+  "feeCurrencies": [
+    {
+      "coinDenom": "NTRN",
+      "coinMinimalDenom": "untrn",
+      "coinDecimals": 6,
+      "coinGeckoId": "neutron-3",
+      "gasPriceStep": {
+        "low": 0.0053,
+        "average": 0.0053,
+        "high": 0.0053
+      }
+    },
+    {
+      "coinDenom": "ATOM",
+      "coinMinimalDenom": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+      "coinDecimals": 6,
+      "gasPriceStep": {
+        "low": 0.0008,
+        "average": 0.0008,
+        "high": 0.0008
+      }
+    }
+  ],
+  "rpc": "https://rpc-dev-neutron.moonkitt.com",
+  "rest": "https://lcd-dev-neutron.moonkitt.com",
+  "nodeProvider": {
+    "name": "Moonkitt Labs",
+    "email": "operations@moonkitt.com",
+    "website":"https://moonkitt.com"
+  },
+  "features": ["cosmwasm"]
+}
