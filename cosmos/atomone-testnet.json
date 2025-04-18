@@ -1,8 +1,8 @@
 {
-  "rpc": "https://atomone-rpc.allinbits.com",
-  "rest": "https://atomone-api.allinbits.com",
-  "chainId": "atomone-1",
-  "chainName": "AtomOne",
+  "rpc": "https://atomone-testnet-1-rpc.allinbits.services",
+  "rest": "https://atomone-testnet-1-api.allinbits.services",
+  "chainId": "atomone-testnet-1",
+  "chainName": "AtomOne Testnet",
   "chainSymbolImageUrl": "https://raw.githubusercontent.com/chainapsis/keplr-chain-registry/main/images/atomone/chain.png",
   "nodeProvider": {
     "name": "AllInBits",
@@ -12,7 +12,7 @@
   "bip44": {
     "coinType": 118
   },
-  "walletUrlForStaking": "https://staking.atom.one",
+  "walletUrlForStaking": "https://testnet.explorer.allinbits.services/atomone-testnet-1/staking",
   "bech32Config": {
     "bech32PrefixAccAddr": "atone",
     "bech32PrefixAccPub": "atonepub",
@@ -27,6 +27,11 @@
       "coinMinimalDenom": "uatone",
       "coinDecimals": 6,
       "coinImageUrl": "https://raw.githubusercontent.com/chainapsis/keplr-chain-registry/main/images/atomone/chain.png"
+    },
+    {
+      "coinDenom": "PHOTON",
+      "coinMinimalDenom": "uphoton",
+      "coinDecimals": 6
     }
   ],
   "feeCurrencies": [
@@ -34,7 +39,16 @@
       "coinDenom": "ATONE",
       "coinMinimalDenom": "uatone",
       "coinDecimals": 6,
-      "coinImageUrl": "https://raw.githubusercontent.com/chainapsis/keplr-chain-registry/main/images/atomone/chain.png",
+      "gasPriceStep": {
+        "low": 0.025,
+        "average": 0.04,
+        "high": 0.08
+      }
+    },
+    {
+      "coinDenom": "PHOTON",
+      "coinMinimalDenom": "uphoton",
+      "coinDecimals": 6,
       "gasPriceStep": {
         "low": 0.025,
         "average": 0.04,
